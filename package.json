@@ -1,0 +1,29 @@
+{
+  "name": "MMM-DinnerplanAndTodos",
+  "version": "1.0.0",
+  "description": "Todo: Insert description here!",
+  "main": "MMM-DinnerplanAndTodos.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "Marcus L�wenborg",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jsonlint": "latest",
+    "grunt-markdownlint": "^1.0.13",
+    "grunt-stylelint": "latest",
+    "grunt-yamllint": "latest",
+    "stylelint-config-standard": "latest",
+    "time-grunt": "latest",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.1",
+    "semantic-ui-css": "^2.4.1",
+    "vanilla-router": "^1.2.8"
+  }
+}

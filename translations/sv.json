@@ -1,0 +1,13 @@
+{
+  "Day": "Dag",
+  "Lunch": "Lunch",
+  "Dinner": "Middag",
+  "Mon": "Mån",
+  "Tue": "Tis",
+  "Wed": "Ons",
+  "Thu": "Tor",
+  "Fri": "Fre",
+  "Sat": "Lör",
+  "Sun": "Sön",
+  "Todo": "Att göra"
+}
