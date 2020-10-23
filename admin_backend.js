@@ -9,12 +9,17 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const { getDinner, saveDinner } = require("./lib/dinner-service");
 const { getTodos, addTodo, deleteTodo } = require("./lib/todo-service");
 
 const app = express();
 const AdminBackend = function (config, nodeHelper) {
+	console.log("3. admin_backend.js -> adminGuiPort = " + config.adminGuiPort);
+	// Enable all CORS requests
+	app.use(cors());
+
 	// Set public folder as root
 	app.use(express.static(`${__dirname}/public`));
 
@@ -121,8 +126,9 @@ const AdminBackend = function (config, nodeHelper) {
 	// Redirect all traffic to index.html
 	app.use((req, res) => res.sendFile(`${__dirname}/public/index.html`));
 
-	// Listen for HTTP requests on port <PORT> of .env file or 3000
+	// Listen for HTTP requests on port adminGuiPort
 	app.listen(config.adminGuiPort, () => {
+		console.log("4. admin_backend.js -> listen -> adminGuiPort = " + config.adminGuiPort);
 		console.log("AdminBackend listening on port %d", config.adminGuiPort);
 	});
 };

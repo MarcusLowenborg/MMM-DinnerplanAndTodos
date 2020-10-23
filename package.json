@@ -9,6 +9,7 @@
   "author": "Marcus L�wenborg",
   "license": "MIT",
   "devDependencies": {
+    "cors": "latest",
     "grunt": "latest",
     "grunt-eslint": "latest",
     "grunt-jsonlint": "latest",
