@@ -24,7 +24,6 @@ let config = null;
 function socketNotificationReceived(notification, payload) {
 	if (notification === "MMM-DinnerplanAndTodos-INIT" && config === null) {
 		config = payload;
-		console.log("2. node_helper.js -> adminGuiPort = " + config.adminGuiPort);
 		adminBackend = new AdminBackend(config, this);
 	}
 

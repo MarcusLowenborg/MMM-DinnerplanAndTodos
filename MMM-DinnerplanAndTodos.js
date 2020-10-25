@@ -25,7 +25,6 @@ Module.register("MMM-DinnerplanAndTodos", {
 		this.loaded = false;
 		const type = this.config.type;
 
-		console.log("1. MMM-DinnerplanAndTodos.js -> this.config.adminGuiPort = " + this.config.adminGuiPort);
 		this.sendSocketNotification("MMM-DinnerplanAndTodos-INIT", this.config);
 
 		if (type !== undefined && type.includes("todo")) {

@@ -16,7 +16,6 @@ const { getTodos, addTodo, deleteTodo } = require("./lib/todo-service");
 
 const app = express();
 const AdminBackend = function (config, nodeHelper) {
-	console.log("3. admin_backend.js -> adminGuiPort = " + config.adminGuiPort);
 	// Enable all CORS requests
 	app.use(cors());
 
@@ -128,7 +127,6 @@ const AdminBackend = function (config, nodeHelper) {
 
 	// Listen for HTTP requests on port adminGuiPort
 	app.listen(config.adminGuiPort, () => {
-		console.log("4. admin_backend.js -> listen -> adminGuiPort = " + config.adminGuiPort);
 		console.log("AdminBackend listening on port %d", config.adminGuiPort);
 	});
 };
